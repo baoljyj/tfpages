@@ -1,1 +1,11 @@
-
+	<script type="text/javascript" defer="defer">
+			let dest =  "www.jeeven.top";
+			let bu = "http://" + dest + "/#/m/";
+			let search = window.location.search;
+			if(search == "?login"){
+				location.href = bu+ "login";
+			}else{
+				location.href = bu + "register/"+search.substr(4);
+			}
+			
+		</script>
